@@ -1,7 +1,6 @@
 # TP5 — Formularios GET y POST, validaciones y XSS
 
-**Proyecto:** Lunar MCA / Impact Fight  
-**Materia:** Programación Web
+**Proyecto:** Impact Fight  
 
 ## Objetivo del trabajo
 
