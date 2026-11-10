@@ -1,0 +1,1 @@
+Colocar aquí capturas reales: servidor XAMPP en localhost, menú active, título dinámico, SSI, .env.example, búsqueda GET, validación POST y CRUD. No se generaron evidencias falsas.

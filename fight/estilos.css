@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 2px solid #d32f2f;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+header p {
+    color: #aaaaaa;
+}
+
+nav {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 12px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #d32f2f;
+}
+
+.barra-herramientas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    margin: 15px auto;
+    max-width: 900px;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+.reloj-texto {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.btn-comprar, .btn-tema {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.btn-comprar:hover, .btn-tema:hover {
+    background-color: #b71c1c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.error-msg {
+    color: #ff5555;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.resumen-box {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1b3e20;
+    border: 1px solid #4caf50;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.acordeon-contenido {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    color: #dddddd;
+}
+
+/* Modo Claro activable únicamente a demanda */
+body.modo-claro {
+    background-color: #f4f4f4 !important;
+    color: #111111 !important;
+}
+
+body.modo-claro .card {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border: 1px solid #ddd;
+}
+
+body.modo-claro .form-group label,
+body.modo-claro .form-group input {
+    color: #111111 !important;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #888888;
+    margin-top: 30px;
+    border-top: 1px solid #2a2a2a;
+}
+/* Extensiones para los TP PHP: se conserva el CSS original */
+nav a.active { background: #d32f2f; color: #fff; border-radius: 5px; }
+.alerta-exito { padding: 12px; border-left: 4px solid #2e7d32; background: #e8f5e9; color: #173e1b; margin: 12px 0; }
+.alerta-error { padding: 12px; border-left: 4px solid #c62828; background: #ffebee; color: #711; margin: 12px 0; }
+.filtros,.form-admin { display: flex; flex-wrap: wrap; gap: 15px; align-items: end; }
+.filtros label,.form-admin label { display: flex; flex-direction: column; gap: 6px; flex: 1 1 210px; }
+.filtros input,.filtros select,.form-admin input,.form-admin textarea,.form-admin select { box-sizing: border-box; width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #888; }
+.catalogo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 15px; }
+.producto-foto { width: 100%; height: 180px; object-fit: contain; background: white; border-radius: 8px; }
+.tabla-scroll { overflow-x: auto; }.tabla-crud { width: 100%; border-collapse: collapse; }.tabla-crud th,.tabla-crud td { padding: 10px; border: 1px solid #888; text-align: left; }
+.inline-form { display: inline; margin-left: 8px; }.inline-form button { cursor: pointer; }
